@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
+import { setNavbarLinks } from '../../actions';
 
 class Navbar extends Component {
     render() {
