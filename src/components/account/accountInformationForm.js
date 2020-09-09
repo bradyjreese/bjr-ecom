@@ -11,9 +11,18 @@ class AccountInformationForm extends Component {
         const { className, handleSubmit } = this.props;
 
         return (
-            <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
+            <form onSubmit={handleSubmit} className={`${className} account-information-form`}>
                 <Field
-                    className='sign-in-form__email'
+                    className='account-information-form__name'
+                    type='name'
+                    title='Name'
+                    placeholder='Name'
+                    name='name'
+                    component={FormInput}
+                />
+
+                <Field
+                    className='account-information-form__email'
                     type='email'
                     title='Email'
                     placeholder='Email'
@@ -22,7 +31,43 @@ class AccountInformationForm extends Component {
                 />
 
                 <Field
-                    className='sign-in-form__password'
+                    className='account-information-form__street-address'
+                    type='address'
+                    title='Street Address'
+                    placeholder='Street Address'
+                    name='address'
+                    component={FormInput}
+                />
+
+                <Field
+                    className='account-information-form__city'
+                    type='city'
+                    title='City'
+                    placeholder='City'
+                    name='city'
+                    component={FormInput}
+                />
+
+                <Field
+                    className='account-information-form__state'
+                    type='state'
+                    title='State'
+                    placeholder='State'
+                    name='state'
+                    component={FormInput}
+                />
+
+                <Field
+                    className='account-information-form__zipcode'
+                    type='zipcode'
+                    title='Zipcode'
+                    placeholder='Zipcode'
+                    name='zipcode'
+                    component={FormInput}
+                />
+
+                {/* <Field
+                    className='account-information-form__password'
                     type='password'
                     title='Password'
                     placeholder='Password'
@@ -30,15 +75,14 @@ class AccountInformationForm extends Component {
                     component={FormInput}
                 />
 
-                <div className='sign-in-form__line'></div>
                 <Field
-                    className='sign-in-form__login'
+                    className='account-information-form__login'
                     onClick={() => history.push('/account')}
                     type='submit'
                     title='Login'
                     name='login'
                     component={FormButton}
-                />
+                /> */}
             </form>
         )
     }
