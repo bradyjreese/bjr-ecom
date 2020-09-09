@@ -9,11 +9,20 @@ import {
     setPurchaseDetail
 } from './user';
 
+import {
+    fetchShopCategories
+} from './shop';
+
 export {
+    // HEADER NAVBAR
     setHeaderLinks,
     setNavbarLinks,
     changeNavbarActive,
 
+    // USER
     fetchUserPurchases,
-    setPurchaseDetail
+    setPurchaseDetail,
+
+    // ACCOUNT
+    fetchShopCategories
 };
