@@ -13,8 +13,11 @@
         state-s zipcode-s] 64px [state-e zipcode-e
         change-password-s current-s] 64px [change-password-e current-e
         new-s] 64px [new-e
-        confirm-s] 64px [confirm-e];
-        grid-template-columns: [s] 1fr [m] 1fr [e];
+        confirm-s] 64px [confirm-e]
+        minmax(20px, 81px)
+        [line-s] 26px [line-e
+        buttons-s] 38px [buttons-e];
+        grid-template-columns: [s cancel-s] 137px [cancel-e] 40px [update-s] 1fr [m] 1fr [update-e] 1fr [e];
         grid-row-gap: 15px;
     }
 }
@@ -78,5 +81,25 @@
     &__new,
     &__confirm {
         transform: translateY(-25px);
+    }
+
+    &__line {
+        grid-row: line-s/line-e;
+        grid-column: s/e;
+        border-top: 1px solid #cccccc;
+        margin-bottom: 24px;
+    }
+
+    &__update-information {
+        grid-column: update-s/update-e;
+    }
+
+    &__cancel {
+        grid-column: cancel-s/cancel-e;
+    }
+
+    &__update-information,
+    &__cancel {
+        grid-row: buttons-s/buttons-e;
     }
 }
