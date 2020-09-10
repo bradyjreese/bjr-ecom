@@ -16,8 +16,8 @@
     &__content {
         grid-row: con-s/con-e;
         grid-column: s/e;
-        height: 675px; // TODO RESIZE CART
-        width: 520px;
+        height: 615px; // TODO RESIZE CART previous size 675px
+        width: 500px; // previous size 520px
         background-color: #333333;
         box-shadow: -3px 20px 20px 0 rgba(0,0,0,0.2);
     }
@@ -34,7 +34,7 @@
 
 .cart-content {
     display: grid;
-    grid-template-rows: 25px [title-s] 80px [title-e products-s] 1fr [products-e footer-s] 113px [footer-e];
+    grid-template-rows: 25px [title-s] 60px [title-e products-s] 1fr [products-e footer-s] 100px [footer-e]; // resized first row from 80px, last row from 133px
     grid-template-columns: [footer-s] 30px [s] 1fr [e] 30px [footer-e];
 
     &__title {
@@ -47,9 +47,11 @@
     }
 
     &__products {
+        // can add padding-top here of 10px
         grid-row: products-s/products-e;
         grid-column: s/e;
         display: grid;
+        overflow-y: scroll;
     }
 
     &__footer {
@@ -64,7 +66,7 @@
     grid-template-rows: [s] 1fr [e];
     grid-template-columns: 50px [checkout-s] 1fr [checkout-e sub-s] 1fr [sub-e] 27px [price-s] 46px [price-e] 31px;
     align-items: center;
-    height: 113px;
+    height: 100px; // resized from 113px
     background-color: #1a1a1a;
 
     & > * {
