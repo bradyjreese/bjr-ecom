@@ -27,6 +27,7 @@ export function fetchShopCategories() {
             {
                 _id: 0,
                 title: 'All',
+                active: true
             },
             {
                 _id: 1,

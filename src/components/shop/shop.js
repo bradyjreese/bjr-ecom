@@ -28,6 +28,7 @@ class Shop extends Component {
         this.props.setHeaderLinks(headerLinks);
         this.props.fetchShopCategories();
         this.props.fetchShopProducts();
+        this.props.filterProductsWithCategoryId(0);
     }
 
     shouldComponentUpdate(nextProps) {
