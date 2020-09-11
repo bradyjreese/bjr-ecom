@@ -1,16 +1,15 @@
 .shop-cart {
+    transition: all .3s ease;
     display: grid;
     grid-template-rows: [tog-s] 40px [tog-e con-s] 1fr [con-e];
     grid-template-columns: [s] 1fr [e];
     grid-row-gap: 15px;
 
     &__toggle {
-        display: grid;
         grid-row: tog-s/tog-e;
         grid-column: s/e;
         justify-self: end;
-        justify-items: center;
-        align-items: center;
+        z-index: 6;
     }
 
     &__content {
@@ -30,6 +29,9 @@
     border-radius: 25px 0 0 25px;
     height: 40px;
     width: 76px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .cart-content {
@@ -50,7 +52,7 @@
         // can add padding-top here of 10px
         grid-row: products-s/products-e;
         grid-column: s/e;
-        grid-row-gap: 45px;
+        // grid-row-gap: 45px;
         display: grid;
         overflow-y: scroll;
     }
@@ -114,4 +116,8 @@
         font-weight: 600;
         color: white;
     }
+}
+
+.cart-hidden {
+    transform: translateX(500px);
 }
