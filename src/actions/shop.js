@@ -65,56 +65,64 @@ export function fetchShopProducts() {
                 title: 'JavaScript in the Browser',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 1,
                 title: 'Graph Database',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 5]
+                belongsTo: [0, 5],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 2,
                 title: 'Full Stack Development',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 1, 4]
+                belongsTo: [0, 1, 4],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 3,
                 title: 'Full Stack Development',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 1, 6]
+                belongsTo: [0, 1, 6],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 4,
                 title: 'JavaScript Development',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 5,
                 title: 'User Interface Design',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 6,
                 title: 'User Experience Design',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 7,
                 title: 'Advanced OOP',
                 description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                 price: 1.99,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: 'http://via.placeholder.com/80x80'
             }
         ]
     })

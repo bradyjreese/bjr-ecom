@@ -30,7 +30,8 @@ export function fetchCartProducts() {
                     title: 'JavaScript in the Browser',
                     description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                     price: 1.99,
-                    belongsTo: [0, 1]
+                    belongsTo: [0, 1],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -41,7 +42,8 @@ export function fetchCartProducts() {
                     title: 'Graph Database',
                     description: 'Xbox Series X is our fastest, most powerful console ever, designed for a console generation that has you at its center.',
                     price: 1.99,
-                    belongsTo: [0, 5]
+                    belongsTo: [0, 5],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 5
             }
